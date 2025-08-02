@@ -1,1 +1,1880 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparaison complète Samsung Galaxy S25 vs iPhone 16 Pro Max : specs, prix, performances et avis d'experts. Découvrez quel smartphone premium choisir en 2024.">
+    <meta name="keywords" content="Samsung S25, iPhone 16 Pro Max, comparaison smartphones, Android vs iOS, meilleur smartphone 2024">
+    <meta name="author" content="PhoneBattle">
+    <meta property="og:title" content="Samsung S25 vs iPhone 16 Pro Max - Comparaison Complète 2024">
+    <meta property="og:description" content="Comparaison détaillée des derniers flagships Samsung et Apple. Spécifications, prix, avantages et inconvénients.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phonebattle.com/samsung-s25-vs-iphone-16-pro-max">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/FF6B6B/FFFFFF?text=Samsung+S25+vs+iPhone+16+Pro+Max">
+    
+    <title>Samsung S25 vs iPhone 16 Pro Max - Comparaison Complète 2024 | PhoneBattle</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #2D3436;
+            --light: #F8F9FA;
+            --purple: #A8E6CF;
+            --pink: #FFD3E1;
+            --blue: #C7CEEA;
+        }
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #FFE66D 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .phone-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .phone-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.6s;
+        }
+        
+        .phone-card:hover::before {
+            transform: scale(1);
+        }
+        
+        .phone-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        
+        .image-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8) 100%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: 1;
+        }
+        
+        .image-card:hover::before {
+            opacity: 1;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .image-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            color: white;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s;
+            z-index: 2;
+        }
+        
+        .image-card:hover .image-info {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .brand-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 3;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            backdrop-filter: blur(5px);
+        }
+        
+        .apple-badge {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+        
+        .samsung-badge {
+            background-color: rgba(78, 205, 196, 0.8);
+            color: white;
+        }
+        
+        .spec-row {
+            transition: all 0.3s ease;
+        }
+        
+        .spec-row:hover {
+            background: linear-gradient(90deg, rgba(255, 107, 107, 0.05) 0%, transparent 100%);
+            transform: translateX(5px);
+        }
+        
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-icon:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+        
+        .scroll-sync {
+            scroll-behavior: smooth;
+        }
+        
+        .rating-star {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .rating-star:hover {
+            transform: scale(1.2);
+        }
+        
+        .tab-active {
+            border-bottom: 3px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .dark-mode {
+            background-color: #111827;
+            color: #F9FAFB;
+        }
+        
+        .dark-mode .bg-white {
+            background-color: #1F2937;
+        }
+        
+        .dark-mode .text-gray-800 {
+            color: #F9FAFB;
+        }
+        
+        .dark-mode .text-gray-600 {
+            color: #D1D5DB;
+        }
+        
+        .dark-mode .bg-gray-100 {
+            background-color: #111827;
+        }
+        
+        .dark-mode .border-gray-200 {
+            border-color: #374151;
+        }
+        
+        .progress-bar {
+            transition: width 1s ease-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .rainbow-bg {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFE66D, #FF8CC6, #A8E6CF, #C7CEEA);
+            background-size: 300% 300%;
+            animation: rainbow 8s ease infinite;
+        }
+        
+        .mobile-optimized {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .color-swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox img {
+            max-width: 100%;
+            max-height: 90%;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-gradient {
+                padding: 2rem 0;
+            }
+            
+            .phone-card {
+                margin-bottom: 1rem;
+            }
+            
+            .image-card {
+                margin-bottom: 1rem;
+            }
+            
+            .tab-content {
+                padding: 0.5rem;
+            }
+            
+            table {
+                font-size: 0.875rem;
+            }
+            
+            .spec-row td {
+                padding: 0.5rem !important;
+            }
+            
+            .lightbox-close {
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 transition-colors duration-300 mobile-optimized">
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ComparisonPage",
+        "name": "Samsung Galaxy S25 vs iPhone 16 Pro Max Comparison",
+        "description": "Detailed comparison between Samsung Galaxy S25 and iPhone 16 Pro Max smartphones",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "name": "Samsung Galaxy S25",
+                    "image": "https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=Samsung+S25",
+                    "description": "Latest flagship smartphone from Samsung with advanced features",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Samsung"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "1099",
+                        "priceCurrency": "EUR"
+                    }
+                },
+                {
+                    "@type": "Product",
+                    "name": "iPhone 16 Pro Max",
+                    "image": "https://via.placeholder.com/300x200/4ECDC4/FFFFFF?text=iPhone+16+Pro+Max",
+                    "description": "Latest flagship smartphone from Apple with iOS 18",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Apple"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "1299",
+                        "priceCurrency": "EUR"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-effect text-white shadow-2xl">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-2xl text-pink-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold">PhoneBattle</h1>
+                </div>
+                
+                <div class="flex items-center space-x-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="p-2 rounded-full hover:bg-white hover:bg-opacity-20 transition">
+                        <i class="fas fa-moon text-lg"></i>
+                    </button>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex space-x-1 bg-white bg-opacity-20 rounded-full p-1">
+                        <button id="langFr" class="lang-btn px-2 py-1 rounded-full font-medium transition active text-xs" title="Français">FR</button>
+                        <button id="langEn" class="lang-btn px-2 py-1 rounded-full font-medium transition text-xs" title="English">EN</button>
+                        <button id="langEs" class="lang-btn px-2 py-1 rounded-full font-medium transition text-xs" title="Español">ES</button>
+                        <button id="langDe" class="lang-btn px-2 py-1 rounded-full font-medium transition text-xs" title="Deutsch">DE</button>
+                        <button id="langIt" class="lang-btn px-2 py-1 rounded-full font-medium transition text-xs" title="Italiano">IT</button>
+                        <button id="langPt" class="lang-btn px-2 py-1 rounded-full font-medium transition text-xs" title="Português">PT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-12 md:py-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 float-animation" data-translate="title">
+                    Samsung Galaxy S25 vs iPhone 16 Pro Max
+                </h2>
+                <p class="text-lg md:text-xl mb-6 opacity-90" data-translate="subtitle">
+                    Le duel des géants : Qui remporte la bataille en 2024 ?
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-8">
+                    <div class="glass-effect rounded-xl p-3 md:p-4">
+                        <div class="text-2xl md:text-3xl font-bold">2</div>
+                        <div class="text-xs md:text-sm opacity-80" data-translate="phones">Smartphones</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-3 md:p-4">
+                        <div class="text-2xl md:text-3xl font-bold">15+</div>
+                        <div class="text-xs md:text-sm opacity-80" data-translate="categories">Catégories</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-3 md:p-4">
+                        <div class="text-2xl md:text-3xl font-bold">50+</div>
+                        <div class="text-xs md:text-sm opacity-80" data-translate="specs">Spécifications</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-3 md:p-4">
+                        <div class="text-2xl md:text-3xl font-bold">4.7</div>
+                        <div class="text-xs md:text-sm opacity-80" data-translate="avg-rating">Note moyenne</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-5 left-5 w-16 h-16 bg-white opacity-10 rounded-full blur-xl"></div>
+        <div class="absolute bottom-5 right-5 w-24 h-24 bg-purple-500 opacity-10 rounded-full blur-2xl"></div>
+        <div class="absolute top-1/2 left-1/4 w-12 h-12 bg-yellow-400 opacity-10 rounded-full blur-lg"></div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="bg-white shadow-md sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-4 md:space-x-8 overflow-x-auto py-2">
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap tab-active text-sm md:text-base" data-tab="overview" data-translate="tab-overview">Aperçu</button>
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap text-gray-600 hover:text-gray-900 text-sm md:text-base" data-tab="specs" data-translate="tab-specs">Spécifications</button>
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap text-gray-600 hover:text-gray-900 text-sm md:text-base" data-tab="camera" data-translate="tab-camera">Caméra</button>
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap text-gray-600 hover:text-gray-900 text-sm md:text-base" data-tab="performance" data-translate="tab-performance">Performance</button>
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap text-gray-600 hover:text-gray-900 text-sm md:text-base" data-tab="gallery" data-translate="tab-gallery">Galerie</button>
+                <button class="tab-btn py-3 md:py-4 font-medium whitespace-nowrap text-gray-600 hover:text-gray-900 text-sm md:text-base" data-tab="verdict" data-translate="tab-verdict">Verdict</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Content -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content">
+            <!-- Phone Cards -->
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <!-- Samsung S25 Card -->
+                <div class="phone-card bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-pink-500 to-red-500 p-6 text-white text-center relative">
+                        <div class="absolute top-4 right-4 bg-white text-pink-600 px-3 py-1 rounded-full text-xs md:text-sm font-bold pulse-animation">
+                            <i class="fas fa-crown mr-1"></i> <span data-translate="best-display">Meilleur écran</span>
+                        </div>
+                        <img src="https://via.placeholder.com/280x180/FF6B6B/FFFFFF?text=Samsung+S25" alt="Samsung S25" class="mx-auto mb-4 rounded-lg shadow-lg">
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">Samsung Galaxy S25</h3>
+                        <p class="text-pink-100 mb-4 text-sm">Android 15 • One UI 7.0</p>
+                        
+                        <!-- Rating -->
+                        <div class="flex justify-center items-center space-x-2 mb-4">
+                            <div class="flex">
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt rating-star text-yellow-400"></i>
+                            </div>
+                            <span class="font-medium">4.8/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="price">Prix</span>
+                                <div class="text-right">
+                                    <div class="text-xl md:text-2xl font-bold text-pink-600">1 099 €</div>
+                                    <div class="text-xs text-gray-500" data-translate="starting-price">à partir de</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="availability">Disponibilité</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium" data-translate="available">Disponible</span>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="colors">Couleurs</span>
+                                <div class="flex space-x-1">
+                                    <div class="color-swatch" style="background-color: #000000"></div>
+                                    <div class="color-swatch" style="background-color: #FFFFFF"></div>
+                                    <div class="color-swatch" style="background-color: #4ECDC4"></div>
+                                    <div class="color-swatch" style="background-color: #FF6B6B"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick Actions -->
+                            <div class="flex space-x-2 mt-6">
+                                <a href="https://amzn.to/4l7YOqI" target="_blank" class="flex-1 bg-pink-600 text-white py-2 px-4 rounded-lg hover:bg-pink-700 transition text-sm text-center">
+                                    <i class="fas fa-shopping-cart mr-2"></i> <span data-translate="buy-now">Acheter sur Amazon</span>
+                                </a>
+                                <button class="flex-1 border border-pink-600 text-pink-600 py-2 px-4 rounded-lg hover:bg-pink-50 transition text-sm">
+                                    <i class="fas fa-heart mr-2"></i> <span data-translate="save">Sauvegarder</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iPhone 16 Pro Max Card -->
+                <div class="phone-card bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-teal-500 to-blue-500 p-6 text-white text-center relative">
+                        <div class="absolute top-4 right-4 bg-white text-teal-600 px-3 py-1 rounded-full text-xs md:text-sm font-bold pulse-animation">
+                            <i class="fas fa-bolt mr-1"></i> <span data-translate="best-performance">Meilleure perf</span>
+                        </div>
+                        <img src="https://via.placeholder.com/280x180/4ECDC4/FFFFFF?text=iPhone+16+Pro+Max" alt="iPhone 16 Pro Max" class="mx-auto mb-4 rounded-lg shadow-lg">
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">iPhone 16 Pro Max</h3>
+                        <p class="text-teal-100 mb-4 text-sm">iOS 18 • A17 Bionic</p>
+                        
+                        <!-- Rating -->
+                        <div class="flex justify-center items-center space-x-2 mb-4">
+                            <div class="flex">
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="fas fa-star rating-star text-yellow-400"></i>
+                                <i class="far fa-star rating-star text-yellow-400"></i>
+                            </div>
+                            <span class="font-medium">4.6/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="price">Prix</span>
+                                <div class="text-right">
+                                    <div class="text-xl md:text-2xl font-bold text-teal-600">1 299 €</div>
+                                    <div class="text-xs text-gray-500" data-translate="starting-price">à partir de</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="availability">Disponibilité</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium" data-translate="preorder">Pré-commande</span>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm" data-translate="colors">Couleurs</span>
+                                <div class="flex space-x-1">
+                                    <div class="color-swatch" style="background-color: #000000"></div>
+                                    <div class="color-swatch" style="background-color: #C0C0C0"></div>
+                                    <div class="color-swatch" style="background-color: #4ECDC4"></div>
+                                    <div class="color-swatch" style="background-color: #FFD3E1"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick Actions -->
+                            <div class="flex space-x-2 mt-6">
+                                <a href="https://amzn.to/41naP4A" target="_blank" class="flex-1 bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-700 transition text-sm text-center">
+                                    <i class="fas fa-shopping-cart mr-2"></i> <span data-translate="preorder-btn">Pré-commander sur Amazon</span>
+                                </a>
+                                <button class="flex-1 border border-teal-600 text-teal-600 py-2 px-4 rounded-lg hover:bg-teal-50 transition text-sm">
+                                    <i class="fas fa-heart mr-2"></i> <span data-translate="save">Sauvegarder</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Comparison -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-10">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 gradient-text" data-translate="quick-compare">Comparaison Rapide</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4 text-pink-600" data-translate="samsung-advantages">Avantages Samsung S25</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="samsung-adv1">Écran Dynamic AMOLED 2X supérieur</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="samsung-adv2">Charge plus rapide (45W vs 30W)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="samsung-adv3">Extension de stockage via microSD</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="samsung-adv4">S Pen intégré pour productivité</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4 text-teal-600" data-translate="iphone-advantages">Avantages iPhone 16 Pro Max</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="iphone-adv1">Processeur A17 Bionic plus puissant</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="iphone-adv2">Écosystème Apple intégré</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="iphone-adv3">Mises à jour logicielles plus longues</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 feature-icon"></i>
+                                <span class="text-sm" data-translate="iphone-adv4">Meilleure revente sur le marché</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specs Tab -->
+        <div id="specs" class="tab-content hidden">
+            <!-- Filter Bar -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6 flex flex-wrap gap-3 items-center">
+                <span class="font-medium text-sm" data-translate="filter-by">Filtrer par :</span>
+                <button class="filter-btn px-3 py-1.5 rounded-lg bg-pink-100 text-pink-700 font-medium text-sm" data-filter="all" data-translate="filter-all">Tout</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="display" data-translate="filter-display">Écran</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="performance" data-translate="filter-performance">Performance</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="camera" data-translate="filter-camera">Caméra</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="battery" data-translate="filter-battery">Batterie</button>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gradient-to-r from-pink-500 to-teal-500 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left sticky left-0 z-10" data-translate="spec">Caractéristique</th>
+                                <th class="py-3 px-4 text-center">Samsung S25</th>
+                                <th class="py-3 px-4 text-center">iPhone 16 Pro Max</th>
+                                <th class="py-3 px-4 text-center" data-translate="winner">Gagnant</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="spec-row" data-category="display">
+                                <td class="py-3 px-4 font-medium sticky left-0 bg-white z-10" data-translate="display">Écran</td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">6.8" Dynamic AMOLED 2X</div>
+                                    <div class="text-xs text-gray-600">144Hz, QHD+</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-pink-500 h-2 rounded-full progress-bar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">6.7" Super Retina XDR</div>
+                                    <div class="text-xs text-gray-600">120Hz, ProMotion</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-teal-500 h-2 rounded-full progress-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full text-xs font-medium">Samsung</span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="spec-row" data-category="performance">
+                                <td class="py-3 px-4 font-medium sticky left-0 bg-white z-10" data-translate="processor">Processeur</td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">Snapdragon 8 Gen 3</div>
+                                    <div class="text-xs text-gray-600">4nm, 8 cœurs</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-pink-500 h-2 rounded-full progress-bar" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">A17 Bionic</div>
+                                    <div class="text-xs text-gray-600">3nm, 6 cœurs</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-teal-500 h-2 rounded-full progress-bar" style="width: 98%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <span class="px-2 py-1 bg-teal-100 text-teal-800 rounded-full text-xs font-medium">iPhone</span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="spec-row" data-category="performance">
+                                <td class="py-3 px-4 font-medium sticky left-0 bg-white z-10" data-translate="ram">Mémoire RAM</td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">12/16 GB LPDDR5X</div>
+                                    <div class="text-xs text-gray-600">Jusqu'à 16GB</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-pink-500 h-2 rounded-full progress-bar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">8/12 GB LPDDR5</div>
+                                    <div class="text-xs text-gray-600">Jusqu'à 12GB</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-teal-500 h-2 rounded-full progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full text-xs font-medium">Samsung</span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="spec-row" data-category="camera">
+                                <td class="py-3 px-4 font-medium sticky left-0 bg-white z-10" data-translate="camera">Caméras</td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">200MP + 50MP + 12MP</div>
+                                    <div class="text-xs text-gray-600">12MP frontale</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-pink-500 h-2 rounded-full progress-bar" style="width: 96%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">48MP + 12MP + 12MP</div>
+                                    <div class="text-xs text-gray-600">12MP frontale</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-teal-500 h-2 rounded-full progress-bar" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full text-xs font-medium">Samsung</span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="spec-row" data-category="battery">
+                                <td class="py-3 px-4 font-medium sticky left-0 bg-white z-10" data-translate="battery">Batterie</td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">5000mAh</div>
+                                    <div class="text-xs text-gray-600">45W rapide, 15W sans fil</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-pink-500 h-2 rounded-full progress-bar" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <div class="font-semibold">4422mAh</div>
+                                    <div class="text-xs text-gray-600">30W rapide, 15W MagSafe</div>
+                                    <div class="mt-2">
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-teal-500 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-4 text-center">
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full text-xs font-medium">Samsung</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camera Tab -->
+        <div id="camera" class="tab-content hidden">
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <!-- Samsung Camera -->
+                <div class="bg-white rounded-2xl shadow-xl p-6">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 text-pink-600">Samsung Galaxy S25</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <img src="https://via.placeholder.com/350x250/FF6B6B/FFFFFF?text=Camera+Setup" alt="Samsung Camera" class="mx-auto rounded-lg shadow-lg mb-4">
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-pink-600">200MP</div>
+                                    <div class="text-xs text-gray-600">Principal</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-pink-600">50MP</div>
+                                    <div class="text-xs text-gray-600">Ultra-wide</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-pink-600">12MP</div>
+                                    <div class="text-xs text-gray-600">Téléphoto</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-3 text-sm" data-translate="camera-features">Fonctionnalités Caméra</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>100x Space Zoom</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Nuit améliorée 2.0</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>8K vidéo à 60fps</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Portrait AI avancé</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- iPhone Camera -->
+                <div class="bg-white rounded-2xl shadow-xl p-6">
+                    <h3 class="text-xl md:text-2xl font-bold mb-6 text-teal-600">iPhone 16 Pro Max</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <img src="https://via.placeholder.com/350x250/4ECDC4/FFFFFF?text=Camera+Setup" alt="iPhone Camera" class="mx-auto rounded-lg shadow-lg mb-4">
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-teal-600">48MP</div>
+                                    <div class="text-xs text-gray-600">Principal</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-teal-600">12MP</div>
+                                    <div class="text-xs text-gray-600">Ultra-wide</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl md:text-3xl font-bold text-teal-600">12MP</div>
+                                    <div class="text-xs text-gray-600">Téléphoto</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-3 text-sm" data-translate="camera-features">Fonctionnalités Caméra</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Photonic Engine</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Smart HDR 5</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>4K Dolby Vision</span>
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Mode Cinématique 4K</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Tab -->
+        <div id="performance" class="tab-content hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-8">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 gradient-text" data-translate="performance-comparison">Comparaison Performance</h3>
+                
+                <!-- Benchmark Results -->
+                <div class="mb-8">
+                    <h4 class="font-semibold text-lg mb-4" data-translate="benchmark-results">Résultats Benchmark</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm">
+                                <span>AnTuTu Score</span>
+                                <span>Samsung: 1,750,000 | iPhone: 1,850,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-gradient-to-r from-pink-500 to-teal-500 h-4 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm">
+                                <span>Geekbench 6 (Single)</span>
+                                <span>Samsung: 2,000 | iPhone: 2,400</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-gradient-to-r from-pink-500 to-teal-500 h-4 rounded-full" style="width: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Real-world Usage -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4" data-translate="real-world-usage">Utilisation Réelle</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                        <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-4 rounded-lg">
+                            <div class="text-2xl md:text-3xl font-bold text-pink-600 mb-2">8h 30m</div>
+                            <div class="text-xs text-gray-600">Autonomie usage intensif</div>
+                        </div>
+                        <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-lg">
+                            <div class="text-2xl md:text-3xl font-bold text-teal-600 mb-2">35min</div>
+                            <div class="text-xs text-gray-600">Charge 0-100%</div>
+                        </div>
+                        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg">
+                            <div class="text-2xl md:text-3xl font-bold text-yellow-600 mb-2">4.8/5</div>
+                            <div class="text-xs text-gray-600">Fluidité interface</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Tab -->
+        <div id="gallery" class="tab-content hidden">
+            <!-- Gallery Filter -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6 flex flex-wrap gap-3 items-center justify-center">
+                <span class="font-medium text-sm" data-translate="filter-by-brand">Filtrer par marque :</span>
+                <button class="filter-btn px-3 py-1.5 rounded-lg bg-pink-100 text-pink-700 font-medium text-sm" data-filter="all" data-translate="filter-all">Tous</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="apple" data-translate="filter-apple">Apple</button>
+                <button class="filter-btn px-3 py-1.5 rounded-lg hover:bg-gray-100 text-sm" data-filter="samsung" data-translate="filter-samsung">Samsung</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- iPhone 16 Pro Max - Vue de face -->
+                <div class="image-card bg-white rounded-2xl shadow-xl overflow-hidden" data-brand="apple">
+                    <div class="relative">
+                        <span class="brand-badge apple-badge">Apple</span>
+                        <img src="https://images.openai.com/thumbnails/url/_pb4c3icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4OTK5KDgy1LPH2yHHxMK1IDDSKSk4rzTOqSopyT7YMr4zwNAsMLQiuKA01t_DJ8wwt9HKKSHMMyS5UKwYA0DQpeA" 
+                             alt="Vue frontale de l'iPhone 16 Pro Max" 
+                             class="w-full h-auto object-cover"
+                             onclick="openLightbox(this)">
+                        <div class="image-info">
+                            <h3 class="text-xl font-bold mb-1">iPhone 16 Pro Max – Vue de face</h3>
+                            <p class="text-sm opacity-80">Design élégant avec écran Edge-to-edge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iPhone 16 Pro Max - Coloris arrière -->
+                <div class="image-card bg-white rounded-2xl shadow-xl overflow-hidden" data-brand="apple">
+                    <div class="relative">
+                        <span class="brand-badge apple-badge">Apple</span>
+                        <img src="https://images.openai.com/thumbnails/url/sIegBHicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4O8bKMD4lPTMwP9nb0MnEJCTPNNk6sSnXOLMgMCvHMNinRdc7IS4zUrdTVjXKNDIzwdTKvisryiC9WKwYAsasooA" 
+                             alt="Dos coloré de l'iPhone 16 Pro Max" 
+                             class="w-full h-auto object-cover"
+                             onclick="openLightbox(this)">
+                        <div class="image-info">
+                            <h3 class="text-xl font-bold mb-1">iPhone 16 Pro Max – Coloris arrière</h3>
+                            <p class="text-sm opacity-80">Nouvelles finitions colorées et matières premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Samsung Galaxy S25 Ultra - Avant -->
+                <div class="image-card bg-white rounded-2xl shadow-xl overflow-hidden" data-brand="samsung">
+                    <div class="relative">
+                        <span class="brand-badge samsung-badge">Samsung</span>
+                        <img src="https://images.openai.com/thumbnails/url/vRvlcnicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw40C4vIS400y8kMd3TKyAj08A0M8zFJKg32LQuMsPBJ1jUO9wsorYxyDA0ICHdzMTNOdPYwqzKO9DdRKwYAsCAn9w" 
+                             alt="Vue avant du Galaxy S25 Ultra" 
+                             class="w-full h-auto object-cover"
+                             onclick="openLightbox(this)">
+                        <div class="image-info">
+                            <h3 class="text-xl font-bold mb-1">Samsung Galaxy S25 Ultra – Avant</h3>
+                            <p class="text-sm opacity-80">Écran Dynamic AMOLED 2X incurvé et S Pen intégré</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Samsung Galaxy S25 Ultra - Arrière -->
+                <div class="image-card bg-white rounded-2xl shadow-xl overflow-hidden" data-brand="samsung">
+                    <div class="relative">
+                        <span class="brand-badge samsung-badge">Samsung</span>
+                        <img src="https://images.openai.com/thumbnails/url/VMhLx3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5OD_QxKsjIqqqwCEkK8MrKDggs8jI3yTDPLs93LPJzKcnzyPDydsvJDc0oyQx0MfYzKArNLfevLI_PLVcrBgA0LCr7" 
+                             alt="Vue arrière du Galaxy S25 Ultra" 
+                             class="w-full h-auto object-cover"
+                             onclick="openLightbox(this)">
+                        <div class="image-info">
+                            <h3 class="text-xl font-bold mb-1">Samsung Galaxy S25 Ultra – Arrière</h3>
+                            <p class="text-sm opacity-80">Système de caméras professionnelles à 200MP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Details Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mt-10">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 gradient-text" data-translate="image-details">Détails des images</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4 text-pink-600" data-translate="iphone-images">Images iPhone 16 Pro Max</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-image text-pink-500 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-medium">iPhone 16 Pro Max – Vue de face</div>
+                                    <div class="text-sm text-gray-600">Format: PNG | 800×1200px</div>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-image text-pink-500 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-medium">iPhone 16 Pro Max – Coloris arrière</div>
+                                    <div class="text-sm text-gray-600">Format: JPG | 800×1200px</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4 text-teal-600" data-translate="samsung-images">Images Galaxy S25 Ultra</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-image text-teal-500 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-medium">Galaxy S25 Ultra – Avant</div>
+                                    <div class="text-sm text-gray-600">Format: PNG | 900×1600px</div>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-image text-teal-500 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-medium">Galaxy S25 Ultra – Arrière</div>
+                                    <div class="text-sm text-gray-600">Format: WebP | 900×1600px</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="rainbow-bg rounded-2xl shadow-xl p-8 text-white text-center mt-10">
+                <h3 class="text-xl md:text-2xl font-bold mb-4" data-translate="download-images">Télécharger les images</h3>
+                <p class="mb-6 text-sm md:text-base opacity-90" data-translate="download-text">Accédez à l'ensemble des images officielles en haute résolution</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-sm md:text-base">
+                        <i class="fas fa-download mr-2"></i> <span data-translate="download-all">Tout télécharger</span>
+                    </button>
+                    <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition text-sm md:text-base">
+                        <i class="fas fa-share-alt mr-2"></i> <span data-translate="share-gallery">Partager la galerie</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verdict Tab -->
+        <div id="verdict" class="tab-content hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-8">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 gradient-text" data-translate="final-verdict">Verdict Final</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border-2 border-pink-200">
+                        <h4 class="font-bold text-xl text-pink-800 mb-4" data-translate="choose-samsung">Choisissez le Samsung S25 si :</h4>
+                        <ul class="space-y-3 text-pink-700 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-pink-500 mt-1 mr-3"></i>
+                                <span>Vous voulez le meilleur écran et caméra</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-pink-500 mt-1 mr-3"></i>
+                                <span>La personnalisation est importante</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-pink-500 mt-1 mr-3"></i>
+                                <span>Vous avez besoin de stockage extensible</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-6 p-4 bg-pink-200 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-pink-800">Score : 9.2/10</div>
+                            <div class="text-sm text-pink-700" data-translate="best-for-multimedia">Idéal pour multimédia</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-xl border-2 border-teal-200">
+                        <h4 class="font-bold text-xl text-teal-800 mb-4" data-translate="choose-iphone">Choisissez l'iPhone 16 Pro Max si :</h4>
+                        <ul class="space-y-3 text-teal-700 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                                <span>Vous êtes dans l'écosystème Apple</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                                <span>La simplicité et stabilité sont primordiales</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                                <span>Vous voulez les meilleures performances</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-6 p-4 bg-teal-200 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-teal-800">Score : 9.0/10</div>
+                            <div class="text-sm text-teal-700" data-translate="best-for-ecosystem">Idéal pour écosystème</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="rainbow-bg rounded-2xl shadow-xl p-8 text-white text-center">
+                <h3 class="text-xl md:text-2xl font-bold mb-4" data-translate="ready-to-decide">Prêt à faire votre choix ?</h3>
+                <p class="mb-6 text-sm md:text-base opacity-90" data-translate="cta-text">Comparez les prix et trouvez la meilleure offre</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://amzn.to/4l7YOqI" target="_blank" class="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-sm md:text-base">
+                        <i class="fas fa-shopping-cart mr-2"></i> <span data-translate="compare-prices">Voir le Samsung S25</span>
+                    </a>
+                    <a href="https://amzn.to/41naP4A" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition text-sm md:text-base">
+                        <i class="fas fa-mobile-alt mr-2"></i> <span data-translate="find-store">Voir l'iPhone 16 Pro Max</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-pink-600 to-teal-600 text-white py-10 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-2xl text-pink-500"></i>
+                        </div>
+                        <span class="text-xl font-bold">PhoneBattle</span>
+                    </div>
+                    <p class="text-pink-100 text-sm" data-translate="footer-desc">Votre source de comparaison objective</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm" data-translate="quick-links">Liens Rapides</h4>
+                    <ul class="space-y-2 text-pink-100 text-sm">
+                        <li><a href="#" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm" data-translate="categories">Catégories</h4>
+                    <ul class="space-y-2 text-pink-100 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Android</a></li>
+                        <li><a href="#" class="hover:text-white transition">iPhone</a></li>
+                        <li><a href="#" class="hover:text-white transition">Comparaisons</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4 text-sm" data-translate="newsletter">Newsletter</h4>
+                    <p class="text-pink-100 mb-4 text-sm" data-translate="newsletter-text">Recevez les dernières comparaisons</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Votre email" class="bg-white bg-opacity-20 text-white placeholder-pink-200 px-4 py-2 rounded-l-lg flex-1 focus:outline-none focus:ring-2 focus:ring-white text-sm">
+                        <button type="submit" class="bg-white text-pink-600 px-4 py-2 rounded-r-lg hover:bg-gray-100 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-pink-400 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p class="text-pink-100 mb-4 md:mb-0" data-translate="copyright">© 2024 PhoneBattle. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-pink-100 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-pink-100 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-pink-100 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-pink-100 hover:text-white transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Translation data
+        const translations = {
+            fr: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "Le duel des géants : Qui remporte la bataille en 2024 ?",
+                phones: "Smartphones",
+                categories: "Catégories",
+                specs: "Spécifications",
+                "avg-rating": "Note moyenne",
+                "tab-overview": "Aperçu",
+                "tab-specs": "Spécifications",
+                "tab-camera": "Caméra",
+                "tab-performance": "Performance",
+                "tab-gallery": "Galerie",
+                "tab-verdict": "Verdict",
+                "best-display": "Meilleur écran",
+                "best-performance": "Meilleure perf",
+                price: "Prix",
+                "starting-price": "à partir de",
+                availability: "Disponibilité",
+                available: "Disponible",
+                preorder: "Pré-commande",
+                colors: "Couleurs",
+                "buy-now": "Acheter sur Amazon",
+                save: "Sauvegarder",
+                "preorder-btn": "Pré-commander sur Amazon",
+                "quick-compare": "Comparaison Rapide",
+                "samsung-advantages": "Avantages Samsung S25",
+                "samsung-adv1": "Écran Dynamic AMOLED 2X supérieur",
+                "samsung-adv2": "Charge plus rapide (45W vs 30W)",
+                "samsung-adv3": "Extension de stockage via microSD",
+                "samsung-adv4": "S Pen intégré pour productivité",
+                "iphone-advantages": "Avantages iPhone 16 Pro Max",
+                "iphone-adv1": "Processeur A17 Bionic plus puissant",
+                "iphone-adv2": "Écosystème Apple intégré",
+                "iphone-adv3": "Mises à jour logicielles plus longues",
+                "iphone-adv4": "Meilleure revente sur le marché",
+                "filter-by": "Filtrer par :",
+                "filter-all": "Tout",
+                "filter-display": "Écran",
+                "filter-performance": "Performance",
+                "filter-camera": "Caméra",
+                "filter-battery": "Batterie",
+                spec: "Caractéristique",
+                winner: "Gagnant",
+                display: "Écran",
+                processor: "Processeur",
+                ram: "Mémoire RAM",
+                camera: "Caméras",
+                battery: "Batterie",
+                "camera-features": "Fonctionnalités Caméra",
+                "performance-comparison": "Comparaison Performance",
+                "benchmark-results": "Résultats Benchmark",
+                "real-world-usage": "Utilisation Réelle",
+                "final-verdict": "Verdict Final",
+                "choose-samsung": "Choisissez le Samsung S25 si :",
+                "choose-iphone": "Choisissez l'iPhone 16 Pro Max si :",
+                "best-for-multimedia": "Idéal pour multimédia",
+                "best-for-ecosystem": "Idéal pour écosystème",
+                "ready-to-decide": "Prêt à faire votre choix ?",
+                "cta-text": "Comparez les prix et trouvez la meilleure offre",
+                "compare-prices": "Voir le Samsung S25",
+                "find-store": "Voir l'iPhone 16 Pro Max",
+                "footer-desc": "Votre source de comparaison objective",
+                "quick-links": "Liens Rapides",
+                "newsletter": "Newsletter",
+                "newsletter-text": "Recevez les dernières comparaisons",
+                copyright: "© 2024 PhoneBattle. Tous droits réservés.",
+                "filter-by-brand": "Filtrer par marque :",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Détails des images",
+                "iphone-images": "Images iPhone 16 Pro Max",
+                "samsung-images": "Images Galaxy S25 Ultra",
+                "download-images": "Télécharger les images",
+                "download-text": "Accédez à l'ensemble des images officielles en haute résolution",
+                "download-all": "Tout télécharger",
+                "share-gallery": "Partager la galerie"
+            },
+            en: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "The giants battle: Who wins in 2024?",
+                phones: "Smartphones",
+                categories: "Categories",
+                specs: "Specifications",
+                "avg-rating": "Average Rating",
+                "tab-overview": "Overview",
+                "tab-specs": "Specifications",
+                "tab-camera": "Camera",
+                "tab-performance": "Performance",
+                "tab-gallery": "Gallery",
+                "tab-verdict": "Verdict",
+                "best-display": "Best Display",
+                "best-performance": "Best Performance",
+                price: "Price",
+                "starting-price": "starting from",
+                availability: "Availability",
+                available: "Available",
+                preorder: "Pre-order",
+                colors: "Colors",
+                "buy-now": "Buy on Amazon",
+                save: "Save",
+                "preorder-btn": "Pre-order on Amazon",
+                "quick-compare": "Quick Comparison",
+                "samsung-advantages": "Samsung S25 Advantages",
+                "samsung-adv1": "Superior Dynamic AMOLED 2X display",
+                "samsung-adv2": "Faster charging (45W vs 30W)",
+                "samsung-adv3": "Expandable storage via microSD",
+                "samsung-adv4": "Built-in S Pen for productivity",
+                "iphone-advantages": "iPhone 16 Pro Max Advantages",
+                "iphone-adv1": "More powerful A17 Bionic processor",
+                "iphone-adv2": "Integrated Apple ecosystem",
+                "iphone-adv3": "Longer software updates",
+                "iphone-adv4": "Better resale value",
+                "filter-by": "Filter by:",
+                "filter-all": "All",
+                "filter-display": "Display",
+                "filter-performance": "Performance",
+                "filter-camera": "Camera",
+                "filter-battery": "Battery",
+                spec: "Feature",
+                winner: "Winner",
+                display: "Display",
+                processor: "Processor",
+                ram: "RAM",
+                camera: "Cameras",
+                battery: "Battery",
+                "camera-features": "Camera Features",
+                "performance-comparison": "Performance Comparison",
+                "benchmark-results": "Benchmark Results",
+                "real-world-usage": "Real-world Usage",
+                "final-verdict": "Final Verdict",
+                "choose-samsung": "Choose the Samsung S25 if:",
+                "choose-iphone": "Choose the iPhone 16 Pro Max if:",
+                "best-for-multimedia": "Ideal for multimedia",
+                "best-for-ecosystem": "Ideal for ecosystem",
+                "ready-to-decide": "Ready to make your choice?",
+                "cta-text": "Compare prices and find the best deal",
+                "compare-prices": "View Samsung S25",
+                "find-store": "View iPhone 16 Pro Max",
+                "footer-desc": "Your source for objective comparisons",
+                "quick-links": "Quick Links",
+                "newsletter": "Newsletter",
+                "newsletter-text": "Get the latest comparisons",
+                copyright: "© 2024 PhoneBattle. All rights reserved.",
+                "filter-by-brand": "Filter by brand:",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Image Details",
+                "iphone-images": "iPhone 16 Pro Max Images",
+                "samsung-images": "Galaxy S25 Ultra Images",
+                "download-images": "Download Images",
+                "download-text": "Access all official high-resolution images",
+                "download-all": "Download All",
+                "share-gallery": "Share Gallery"
+            },
+            es: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "La batalla de gigantes: ¿Quién gana en 2024?",
+                phones: "Smartphones",
+                categories: "Categorías",
+                specs: "Especificaciones",
+                "avg-rating": "Calificación promedio",
+                "tab-overview": "Resumen",
+                "tab-specs": "Especificaciones",
+                "tab-camera": "Cámara",
+                "tab-performance": "Rendimiento",
+                "tab-gallery": "Galería",
+                "tab-verdict": "Veredicto",
+                "best-display": "Mejor pantalla",
+                "best-performance": "Mejor rendimiento",
+                price: "Precio",
+                "starting-price": "desde",
+                availability: "Disponibilidad",
+                available: "Disponible",
+                preorder: "Pre-pedido",
+                colors: "Colores",
+                "buy-now": "Comprar en Amazon",
+                save: "Guardar",
+                "preorder-btn": "Pre-pedir en Amazon",
+                "quick-compare": "Comparación Rápida",
+                "samsung-advantages": "Ventajas Samsung S25",
+                "samsung-adv1": "Pantalla Dynamic AMOLED 2X superior",
+                "samsung-adv2": "Carga más rápida (45W vs 30W)",
+                "samsung-adv3": "Almacenamiento expandible vía microSD",
+                "samsung-adv4": "S Pen integrado para productividad",
+                "iphone-advantages": "Ventajas iPhone 16 Pro Max",
+                "iphone-adv1": "Procesador A17 Bionic más potente",
+                "iphone-adv2": "Ecosistema Apple integrado",
+                "iphone-adv3": "Actualizaciones de software más largas",
+                "iphone-adv4": "Mejor valor de reventa",
+                "filter-by": "Filtrar por:",
+                "filter-all": "Todos",
+                "filter-display": "Pantalla",
+                "filter-performance": "Rendimiento",
+                "filter-camera": "Cámara",
+                "filter-battery": "Batería",
+                spec: "Característica",
+                winner: "Ganador",
+                display: "Pantalla",
+                processor: "Procesador",
+                ram: "Memoria RAM",
+                camera: "Cámaras",
+                battery: "Batería",
+                "camera-features": "Características de Cámara",
+                "performance-comparison": "Comparación de Rendimiento",
+                "benchmark-results": "Resultados Benchmark",
+                "real-world-usage": "Uso Real",
+                "final-verdict": "Veredicto Final",
+                "choose-samsung": "Elija el Samsung S25 si:",
+                "choose-iphone": "Elija el iPhone 16 Pro Max si:",
+                "best-for-multimedia": "Ideal para multimedia",
+                "best-for-ecosystem": "Ideal para ecosistema",
+                "ready-to-decide": "¿Listo para tomar su decisión?",
+                "cta-text": "Compare precios y encuentre la mejor oferta",
+                "compare-prices": "Ver Samsung S25",
+                "find-store": "Ver iPhone 16 Pro Max",
+                "footer-desc": "Su fuente de comparaciones objetivas",
+                "quick-links": "Enlaces Rápidos",
+                "newsletter": "Boletín",
+                "newsletter-text": "Reciba las últimas comparaciones",
+                copyright: "© 2024 PhoneBattle. Todos los derechos reservados.",
+                "filter-by-brand": "Filtrar por marca:",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Detalles de Imágenes",
+                "iphone-images": "Imágenes iPhone 16 Pro Max",
+                "samsung-images": "Imágenes Galaxy S25 Ultra",
+                "download-images": "Descargar Imágenes",
+                "download-text": "Acceda a todas las imágenes oficiales en alta resolución",
+                "download-all": "Descargar Todo",
+                "share-gallery": "Compartir Galería"
+            },
+            de: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "Der Kampf der Giganten: Wer gewinnt 2024?",
+                phones: "Smartphones",
+                categories: "Kategorien",
+                specs: "Spezifikationen",
+                "avg-rating": "Durchschnittsbewertung",
+                "tab-overview": "Übersicht",
+                "tab-specs": "Spezifikationen",
+                "tab-camera": "Kamera",
+                "tab-performance": "Leistung",
+                "tab-gallery": "Galerie",
+                "tab-verdict": "Urteil",
+                "best-display": "Bestes Display",
+                "best-performance": "Beste Leistung",
+                price: "Preis",
+                "starting-price": "ab",
+                availability: "Verfügbarkeit",
+                available: "Verfügbar",
+                preorder: "Vorbestellung",
+                colors: "Farben",
+                "buy-now": "Bei Amazon kaufen",
+                save: "Speichern",
+                "preorder-btn": "Bei Amazon vorbestellen",
+                "quick-compare": "Schnellvergleich",
+                "samsung-advantages": "Samsung S25 Vorteile",
+                "samsung-adv1": "Überlegenes Dynamic AMOLED 2X Display",
+                "samsung-adv2": "Schnelleres Laden (45W vs 30W)",
+                "samsung-adv3": "Erweiterbarer Speicher per microSD",
+                "samsung-adv4": "Integrierter S Pen für Produktivität",
+                "iphone-advantages": "iPhone 16 Pro Max Vorteile",
+                "iphone-adv1": "Leistungsstärkerer A17 Bionic Prozessor",
+                "iphone-adv2": "Integriertes Apple Ökosystem",
+                "iphone-adv3": "Längere Software-Updates",
+                "iphone-adv4": "Besserer Wiederverkaufswert",
+                "filter-by": "Filtern nach:",
+                "filter-all": "Alle",
+                "filter-display": "Display",
+                "filter-performance": "Leistung",
+                "filter-camera": "Kamera",
+                "filter-battery": "Batterie",
+                spec: "Merkmal",
+                winner: "Gewinner",
+                display: "Display",
+                processor: "Prozessor",
+                ram: "RAM-Speicher",
+                camera: "Kameras",
+                battery: "Batterie",
+                "camera-features": "Kamerafunktionen",
+                "performance-comparison": "Leistungsvergleich",
+                "benchmark-results": "Benchmark-Ergebnisse",
+                "real-world-usage": "Echte Nutzung",
+                "final-verdict": "Finale Urteil",
+                "choose-samsung": "Wählen Sie das Samsung S25, wenn:",
+                "choose-iphone": "Wählen Sie das iPhone 16 Pro Max, wenn:",
+                "best-for-multimedia": "Ideal für Multimedia",
+                "best-for-ecosystem": "Ideal für Ökosystem",
+                "ready-to-decide": "Bereit, Ihre Entscheidung zu treffen?",
+                "cta-text": "Vergleichen Sie Preise und finden Sie das beste Angebot",
+                "compare-prices": "Samsung S25 anzeigen",
+                "find-store": "iPhone 16 Pro Max anzeigen",
+                "footer-desc": "Ihre Quelle für objektive Vergleiche",
+                "quick-links": "Schnelllinks",
+                "newsletter": "Newsletter",
+                "newsletter-text": "Erhalten Sie die neuesten Vergleiche",
+                copyright: "© 2024 PhoneBattle. Alle Rechte vorbehalten.",
+                "filter-by-brand": "Nach Marke filtern:",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Bilddetails",
+                "iphone-images": "iPhone 16 Pro Max Bilder",
+                "samsung-images": "Galaxy S25 Ultra Bilder",
+                "download-images": "Bilder herunterladen",
+                "download-text": "Zugriff auf alle offiziellen Bilder in hoher Auflösung",
+                "download-all": "Alles herunterladen",
+                "share-gallery": "Galerie teilen"
+            },
+            it: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "La battaglia dei giganti: Chi vince nel 2024?",
+                phones: "Smartphone",
+                categories: "Categorie",
+                specs: "Specifiche",
+                "avg-rating": "Valutazione media",
+                "tab-overview": "Panoramica",
+                "tab-specs": "Specifiche",
+                "tab-camera": "Fotocamera",
+                "tab-performance": "Prestazioni",
+                "tab-gallery": "Galleria",
+                "tab-verdict": "Verdetto",
+                "best-display": "Miglior display",
+                "best-performance": "Migliori prestazioni",
+                price: "Prezzo",
+                "starting-price": "da",
+                availability: "Disponibilità",
+                available: "Disponibile",
+                preorder: "Pre-ordine",
+                colors: "Colori",
+                "buy-now": "Acquista su Amazon",
+                save: "Salva",
+                "preorder-btn": "Pre-ordina su Amazon",
+                "quick-compare": "Confronto Rapido",
+                "samsung-advantages": "Vantaggi Samsung S25",
+                "samsung-adv1": "Display Dynamic AMOLED 2X superiore",
+                "samsung-adv2": "Carica più veloce (45W vs 30W)",
+                "samsung-adv3": "Archiviazione espandibile tramite microSD",
+                "samsung-adv4": "S Pen integrato per produttività",
+                "iphone-advantages": "Vantaggi iPhone 16 Pro Max",
+                "iphone-adv1": "Processore A17 Bionic più potente",
+                "iphone-adv2": "Ecosistema Apple integrato",
+                "iphone-adv3": "Aggiornamenti software più lunghi",
+                "iphone-adv4": "Miglior valore di rivendita",
+                "filter-by": "Filtra per:",
+                "filter-all": "Tutti",
+                "filter-display": "Display",
+                "filter-performance": "Prestazioni",
+                "filter-camera": "Fotocamera",
+                "filter-battery": "Batteria",
+                spec: "Caratteristica",
+                winner: "Vincitore",
+                display: "Display",
+                processor: "Processore",
+                ram: "Memoria RAM",
+                camera: "Fotocamere",
+                battery: "Batteria",
+                "camera-features": "Funzionalità Fotocamera",
+                "performance-comparison": "Confronto Prestazioni",
+                "benchmark-results": "Risultati Benchmark",
+                "real-world-usage": "Utilizzo Reale",
+                "final-verdict": "Verdetto Finale",
+                "choose-samsung": "Scegli il Samsung S25 se:",
+                "choose-iphone": "Scegli l'iPhone 16 Pro Max se:",
+                "best-for-multimedia": "Ideale per multimedia",
+                "best-for-ecosystem": "Ideale per ecosistema",
+                "ready-to-decide": "Pronto a fare la tua scelta?",
+                "cta-text": "Confronta i prezzi e trova la migliore offerta",
+                "compare-prices": "Vedi Samsung S25",
+                "find-store": "Vedi iPhone 16 Pro Max",
+                "footer-desc": "La tua fonte di confronti obiettivi",
+                "quick-links": "Link Rapidi",
+                "newsletter": "Newsletter",
+                "newsletter-text": "Ricevi gli ultimi confronti",
+                copyright: "© 2024 PhoneBattle. Tutti i diritti riservati.",
+                "filter-by-brand": "Filtra per marca:",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Dettagli Immagini",
+                "iphone-images": "Immagini iPhone 16 Pro Max",
+                "samsung-images": "Immagini Galaxy S25 Ultra",
+                "download-images": "Scarica Immagini",
+                "download-text": "Accedi a tutte le immagini ufficiali in alta risoluzione",
+                "download-all": "Scarica Tutto",
+                "share-gallery": "Condividi Galleria"
+            },
+            pt: {
+                title: "Samsung Galaxy S25 vs iPhone 16 Pro Max",
+                subtitle: "A batalha dos gigantes: Quem vence em 2024?",
+                phones: "Smartphones",
+                categories: "Categorias",
+                specs: "Especificações",
+                "avg-rating": "Avaliação média",
+                "tab-overview": "Visão Geral",
+                "tab-specs": "Especificações",
+                "tab-camera": "Câmera",
+                "tab-performance": "Desempenho",
+                "tab-gallery": "Galeria",
+                "tab-verdict": "Veredito",
+                "best-display": "Melhor tela",
+                "best-performance": "Melhor desempenho",
+                price: "Preço",
+                "starting-price": "a partir de",
+                availability: "Disponibilidade",
+                available: "Disponível",
+                preorder: "Pré-encomenda",
+                colors: "Cores",
+                "buy-now": "Comprar na Amazon",
+                save: "Salvar",
+                "preorder-btn": "Pré-encomendar na Amazon",
+                "quick-compare": "Comparação Rápida",
+                "samsung-advantages": "Vantagens Samsung S25",
+                "samsung-adv1": "Tela Dynamic AMOLED 2X superior",
+                "samsung-adv2": "Carregamento mais rápido (45W vs 30W)",
+                "samsung-adv3": "Armazenamento expansível via microSD",
+                "samsung-adv4": "S Pen integrado para produtividade",
+                "iphone-advantages": "Vantagens iPhone 16 Pro Max",
+                "iphone-adv1": "Processador A17 Bionic mais poderoso",
+                "iphone-adv2": "Ecossistema Apple integrado",
+                "iphone-adv3": "Atualizações de software mais longas",
+                "iphone-adv4": "Melhor valor de revenda",
+                "filter-by": "Filtrar por:",
+                "filter-all": "Todos",
+                "filter-display": "Tela",
+                "filter-performance": "Desempenho",
+                "filter-camera": "Câmera",
+                "filter-battery": "Bateria",
+                spec: "Característica",
+                winner: "Vencedor",
+                display: "Tela",
+                processor: "Processador",
+                ram: "Memória RAM",
+                camera: "Câmeras",
+                battery: "Bateria",
+                "camera-features": "Recursos da Câmera",
+                "performance-comparison": "Comparação de Desempenho",
+                "benchmark-results": "Resultados Benchmark",
+                "real-world-usage": "Uso Real",
+                "final-verdict": "Veredito Final",
+                "choose-samsung": "Escolha o Samsung S25 se:",
+                "choose-iphone": "Escolha o iPhone 16 Pro Max se:",
+                "best-for-multimedia": "Ideal para multimídia",
+                "best-for-ecosystem": "Ideal para ecossistema",
+                "ready-to-decide": "Pronto para fazer sua escolha?",
+                "cta-text": "Compare preços e encontre a melhor oferta",
+                "compare-prices": "Ver Samsung S25",
+                "find-store": "Ver iPhone 16 Pro Max",
+                "footer-desc": "Sua fonte de comparações objetivas",
+                "quick-links": "Links Rápidos",
+                "newsletter": "Newsletter",
+                "newsletter-text": "Receba as últimas comparações",
+                copyright: "© 2024 PhoneBattle. Todos os direitos reservados.",
+                "filter-by-brand": "Filtrar por marca:",
+                "filter-apple": "Apple",
+                "filter-samsung": "Samsung",
+                "image-details": "Detalhes da Imagem",
+                "iphone-images": "Imagens iPhone 16 Pro Max",
+                "samsung-images": "Imagens Galaxy S25 Ultra",
+                "download-images": "Baixar Imagens",
+                "download-text": "Acesse todas as imagens oficiais em alta resolução",
+                "download-all": "Baixar Tudo",
+                "share-gallery": "Compartilhar Galeria"
+            }
+        };
+
+        // Language switching
+        let currentLang = 'fr';
+        
+        // Add event listeners for all language buttons
+        document.getElementById('langFr').addEventListener('click', () => setLanguage('fr'));
+        document.getElementById('langEn').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('langEs').addEventListener('click', () => setLanguage('es'));
+        document.getElementById('langDe').addEventListener('click', () => setLanguage('de'));
+        document.getElementById('langIt').addEventListener('click', () => setLanguage('it'));
+        document.getElementById('langPt').addEventListener('click', () => setLanguage('pt'));
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-white', 'text-pink-600');
+                btn.classList.add('text-white');
+            });
+            
+            const activeBtn = document.getElementById('lang' + lang.charAt(0).toUpperCase() + lang.slice(1));
+            if (activeBtn) {
+                activeBtn.classList.add('active', 'bg-white', 'text-pink-600');
+                activeBtn.classList.remove('text-white');
+            }
+            
+            // Update translations
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const icon = darkModeToggle.querySelector('i');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Tab navigation
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                
+                // Update active tab button
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('tab-active', 'text-pink-600');
+                    btn.classList.add('text-gray-600');
+                });
+                button.classList.add('tab-active', 'text-pink-600');
+                button.classList.remove('text-gray-600');
+                
+                // Show target tab content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.getElementById(targetTab).classList.remove('hidden');
+            });
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const specRows = document.querySelectorAll('.spec-row');
+        const imageCards = document.querySelectorAll('.image-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active filter button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-pink-100', 'text-pink-700', 'font-medium');
+                    btn.classList.add('hover:bg-gray-100');
+                });
+                button.classList.add('bg-pink-100', 'text-pink-700', 'font-medium');
+                button.classList.remove('hover:bg-gray-100');
+                
+                // Filter specs
+                specRows.forEach(row => {
+                    if (filter === 'all' || row.getAttribute('data-category') === filter) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+                
+                // Filter images
+                imageCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-brand') === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            
+            // Prevent body scroll when lightbox is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Progress bar animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+        
+        const progressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.progress-bar');
+                    progressBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            progressObserver.observe(tab);
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('fr');
+            
+            // Animate progress bars on load
+            setTimeout(() => {
+                document.querySelectorAll('.progress-bar').forEach(bar => {
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+            }, 500);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
